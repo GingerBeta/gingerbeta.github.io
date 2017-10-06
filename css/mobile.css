@@ -1,0 +1,125 @@
+@media (max-width: 767px) {
+
+  /*---Navigation---*/
+
+  .menu {
+      position:relative;
+      display:inline-block;
+      width:100%;
+      padding:10px 18px;
+      box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+      border-radius:3px;
+      background:black;
+      opacity: .8;
+  }
+
+  .menu ul.active {
+      display:none;
+  }
+
+  .menu ul {
+      width:100%;
+      position:absolute;
+      top:120%;
+      left:0px;
+      padding:10px 18px;
+      box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+      border-radius:3px;
+      background:#303030;
+  }
+
+  .menu ul:after {
+      width:0px;
+      height:0px;
+      position:absolute;
+      top:0%;
+      left:22px;
+      content:'';
+      transform:translate(0%, -100%);
+      border-left:7px solid transparent;
+      border-right:7px solid transparent;
+      border-bottom:7px solid #303030;
+  }
+
+  .menu li {
+      margin:5px 0px 5px 0px;
+      float:none;
+      display:block;
+  }
+
+  .menu a {
+      display:block;
+      color: white;
+      text-decoration: none;
+  }
+
+  .toggle-nav {
+      padding:20px;
+      float:left;
+      display:inline-block;
+      box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+      border-radius:3px;
+      background:#303030;
+      text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+      color:white;
+      font-size:20px;
+      transition:color linear 0.15s;
+  }
+
+  .toggle-nav:hover, .toggle-nav.active {
+      text-decoration:none;
+      color:lightblue;
+  }
+
+  /*---Sections---*/
+
+
+    #homepage {
+      background: url(https://images.unsplash.com/photo-1496167117681-944f702be1f4?dpr=1&auto=compress,format&fit=crop&w=1189&h=&q=80&cs=tinysrgb&crop=);
+      background-size: cover;
+      color: grey;
+      background-position: center center;
+      position: relative;
+      background-repeat: no-repeat;
+    }
+
+    h2 {
+      font-size: 17px;
+      margin: 0 30px;
+    }
+
+    .button {
+      margin-top: 10px;
+    }
+
+  /*---Modules---*/
+
+    .modules {
+      padding: 30px 0;
+    }
+
+    .modules > div {
+      width: 100%;
+      float: none;
+      padding: 15px;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+
+    .modules div h3 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+
+    .modules > div:nth-child(2) {
+      border-top: none;
+      border-bottom: none;
+    }
+
+
+  }
+
+
+
+}
